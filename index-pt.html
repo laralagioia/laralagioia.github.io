@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Keyboard Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">  
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body class="container-fluid" data-spy="scroll" data-target=".navbar" data-offset="70">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                    <li><a href="#section1">Home</a></li>
+                    <li><a href="#section2">Acentos</a></li>
+                    <li><a href="#section3">Instalar</a></li>
+                    <li><a href="#section4">Desinstalar</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <img id="imgNavPt" src="https://lipis.github.io/flag-icon-css/flags/4x3/br.svg" alt="Brazilian Flag" class="img-thumbnail icon-small">
+                                PT-BR<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./index.html">
+                                    <img id="imgNavEng" src="https://lipis.github.io/flag-icon-css/flags/4x3/gb.svg" alt="UK Flag" class="img-thumbnail icon-small"> 
+                                    ENG
+                                </a></li>
+                                <li><a href="./index-pt.html">
+                                    <img id="imgNavPt" src="https://lipis.github.io/flag-icon-css/flags/4x3/br.svg" alt="Brazilian Flag" class="img-thumbnail icon-small"> 
+                                    PT-BR
+                                </a></li>                
+                            </ul>                         
+                        </li>
+
+                </ul>                        
+            </div>
+        </div>
+    </nav>   
+    <br>
+    <br>
+    <br> 
+
+    <div id="section1" class="container-fluid">
+        <h3>Bem-vindo!</h3>
+        <p>
+            Esse projeto foi desenvolvido para digitar <a href="#section2">acentos</a> utilizados na língua portuguesa num teclado no padrão do Reino Unido.
+        </p>
+        <p>Este foi o layout utilizado para desenvolver o teclado:
+        </p>
+            <img src="img/layout.jpg" class="img-responsive" alt="UK Keyboard">
+            <br>
+            <br>
+        <p>Esses outros formatos de teclado também funcionam:<span></span></p>
+            
+        <img src="img/alt_layout.jpg" class="img-responsive" alt="UK Keyboard">
+        <br>
+
+    </div>
+
+    <div id="section2" class="container-fluid">
+        <h3>Acentos Disponíveis</h3>
+        <br>
+        <p>Se você tem dúvidas de como utilizar os acentos, siga as instruções abaixo:</p>
+        <br>
+        <div class="row">
+            <div class="col-sm-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a class="list-group-item" data-toggle="pill" href="#list-acute">Agudo (´)</a></li>
+                    <li><a class="list-group-item" id="menu-cedilla" data-toggle="pill" href="#list-cedilla">Cedilha (¸)</a></li>
+                    <li><a class="list-group-item" data-toggle="pill" href="#list-circumflex" role="tab" aria-controls="circumflex">Circunflexo (^)</a></li>
+                    <li><a class="list-group-item" data-toggle="pill" href="#list-umlaut" role="tab" aria-controls="umlaut">Trema (¨)</a></li>
+                    <li><a class="list-group-item" data-toggle="pill" href="#list-grave" role="tab" aria-controls="grave">Crase (`)</a></li>
+                    <li><a class="list-group-item" data-toggle="pill" href="#list-invqmark" role="tab" aria-controls="invqmark">Interrogação Invertida (¿)</a></li>
+                    <li><a class="list-group-item" data-toggle="pill" href="#list-invexmark" role="tab" aria-controls="invexmark">Exlamação Invertida (¡)</a></li>
+                </ul>
+            </div>
+            <br>
+            <div class="col-sm-9">
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="list-acute" role="tabpanel" aria-labelledby="list-acute-list">
+                        <h4>Acento Agudo (´)</h4>
+                        <br>
+                        <p>Tecla do do apóstrofo seguido pela vogal desejada</p>
+                        <img src="img/apostrophe.jpg" class="img" alt="Apostrophe Key"> <span class="glyphicon glyphicon-arrow-right"></span> <img src="img/vowels.jpg" class="img" alt="Vowels">
+                    </div>
+                    <div class="tab-pane fade" id="list-cedilla" role="tabpanel" aria-labelledby="list-cedilla-list">
+                        <h4>Cedilha (¸)</h4>
+                        <br>
+                        <p>Tecla do do apóstrofo seguido pela letra 'c'</p>
+                        <img src="img/apostrophe.jpg" class="img" alt="Apostrophe Key"> <span class="glyphicon glyphicon-arrow-right"></span> <img src="img/c.jpg" class="img" alt="C Key">                        
+                    </div>
+                    <div class="tab-pane fade" id="list-circumflex" role="tabpanel" aria-labelledby="list-circumflex-list">
+                        <h4>Circunflexo (^)</h4>
+                        <br>
+                        <p>Tecla do acento circunflexo seguido pela vogal desejada</p>
+                        <img src="img/circumflex.jpg" class="img" alt="Circumflex Key"> <span class="glyphicon glyphicon-arrow-right"></span> <img src="img/vowels.jpg" class="img" alt="Vowels">
+                    </div>
+                    <div class="tab-pane fade" id="list-umlaut" role="tabpanel" aria-labelledby="list-umlaut-list">
+                        <h4>Trema (¨)</h4>
+                        <br>
+                        <p>
+                            Ctrl + Alt + tecla do ponto-e-vírgula/dois pontos pressionadas ao mesmo tempo seguidas pela vogal desejada
+                            <br><strong>ou</strong>
+                            <br>AltGr + tecla do ponto-e-vírgula/dois pontos pressionadas ao mesmo tempo seguidas pela vogal desejada
+                        </p>
+                        <img src="img/alt grand.jpg" class="img" alt="AltGran Key"> <span class="glyphicon glyphicon-arrow-right"></span> <img src="img/vowels.jpg" class="img" alt="Vowels">
+                    </div>
+                    <div class="tab-pane fade" id="list-grave" role="tabpanel" aria-labelledby="list-grave-list">
+                        <h4>Crase (`)</h4>
+                        <br>
+                        <p>Tecla da crase seguida pela vogal desejada</p>
+                        <img src="img/grave.jpg" class="img" alt="Grave Key"> <span class="glyphicon glyphicon-arrow-right"></span> <img src="img/vowels.jpg" class="img" alt="Vowels">
+                        
+                    </div>
+                    <div class="tab-pane fade" id="list-invqmark" role="tabpanel" aria-labelledby="list-invqmark-list">
+                        <h4>Interrogação Invertida (¿)</h4>
+                        <br>
+                        <p>
+                            Apesar de não ser um acento próprio da língua portuguesa, pode ser útil ter fácil acesso a esse ponto. 
+                            <br>
+                            <br>
+                            Ctrl + Alt + tecla da barra/interrogação pressionados ao mesmo tempo   
+                            <br><strong>ou</strong>
+                            <br>AltGr + tecla da barra/interrogação pressionados ao mesmo tempo   
+                        </p>
+                        <img src="img/qmark.png" class="img" alt= "Inverted Question Mark Key">
+                        
+                    </div>
+                    <div class="tab-pane fade" id="list-invexmark" role="tabpanel" aria-labelledby="list-invexmark-list">
+                        <h4>Exclamação Invertida (¡)</h4>
+                        <br>
+                        <p>
+                            Apesar de não ser um acento próprio da língua portuguesa, pode ser útil ter fácil acesso a esse ponto. 
+                            <br>                                
+                            Ctrl + Alt + tecla 1/exclamação pressionados ao mesmo tempo
+                            <br><strong>or</strong>
+                            <br>AltGr +  tecla 1/exclamação pressionados ao mesmo tempo                          
+                        </p>
+                        <img src="img/invexcl.jpg" class="img" alt= "Inverted Exclamation Mark Key">
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div id="section3" class="container-fluid">
+        <h3>Instalação</h3>
+        <div class="stepwizard">
+            <div class="stepwizard-row">
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-default btn-circle">1</button>
+                    <p><a href="http://bit.do/uk-pt-keyboard-1">Download</a>, salve e extraia os arquivos de instalação</p>
+                    <p style="font-size: small; font-weight: normal;">Links alternativos para o download: <a href="http://bit.do/uk-pt-keyboard-2">aqui</a> e <a href="http://bit.do/uk-pt-keyboard-3">aqui</a></p>                    
+                    <img src="img/extract.jpg" class="img-responsive center-block" alt="Extract">        
+                </div>
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-default btn-circle">2</button>
+                    <p>Abra a pasta e execute o arquivo setup</p>
+                    <img src="img/run.jpg" class="img-responsive center-block" alt="Run Setup">                               
+                </div>
+            </div>
+        </div>
+            <br>
+        <div class="stepwizard">                    
+            <div class="stepwizard-row">
+                <div class="stepwizard-step">
+                        <button type="button" class="btn btn-default btn-circle">3</button>
+                        <p>Se for solicitado, autorize o arquivo a fazer as modificações necessárias</p>
+                        <img src="img/authorize.jpg" class="img-responsive center-block" alt="find keyboard">      
+                        
+                </div>
+                <div class="stepwizard-step">
+                        <button type="button" class="btn btn-default btn-circle">4</button>
+                        <p>Siga as instruções do setup e instale o teclado no seu computador</p>
+                        <img src="img/install-ok.jpg" class="img-responsive center-block" alt="Install">                                                       
+                </div>
+            </div>
+        </div>
+            <br>
+        <div class="stepwizard">                                        
+            <div class="stepwizard-row">
+                    <div class="stepwizard-step">
+                            <button type="button" class="btn btn-default btn-circle">5</button>
+                            <p>Reinicie o seu computador</p>
+                            <img src="img/restart.jpg" class="img-responsive center-block" alt="Extract">                                    
+                    </div>
+                    <div class="stepwizard-step">
+                            <button type="button" class="btn btn-default btn-circle">6</button>
+                            <p>Procure pelas configurações de Região & Linguagem</p>
+                            <img src="img/region.jpg" class="img-responsive center-block" alt="Search">                                                                                   
+                    </div>
+            </div>
+        </div>
+            <br>
+            <br>
+        <div class="stepwizard">                                                           
+            <div class="stepwizard-row">
+                <div class="stepwizard-step">
+                        <button type="button" class="btn btn-default btn-circle">7</button>
+                        <p>Clique na sua opção da sua língua. <br>
+                            Você pode ter qualquer língua nessa etapa.</p>
+                        <img src="img/options.jpg" class="img-responsive center-block" alt="Languge Option">                        
+                </div>
+                <div class="stepwizard-step">
+                        <button type="button" class="btn btn-default btn-circle">8</button>
+                        <p>Clique em "Adicionar um teclado" e selecione United Kingdom - PT(BR)</p>
+                        <img src="img/keyboard.jpg" class="img-responsive center-block" alt="Select UK-PT(BR)">                                                                                   
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="stepwizard">   
+            <div class="stepwizard-row">
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-default btn-circle">9</button>
+                    <p>O seu teclado com acentos está pronto para ser usado.</p>
+                </div>
+            </div>
+        </div>              
+    </div>
+
+    <div id="section4" class="container-fluid">
+            <h3>Desinstalando</h3>
+            <p>Que pena que o teclado não funcionou para você. Antes de tentar desinstalar, assegure-se que o teclado United Kingdom - PT(BR) não está selecionado como o padrão.
+            <br>Há duas opções para desinstalar o teclado: </p>
+            <br>
+            <h4>Opção 01: usando o arquivo de setup do teclado</h4>
+            <div class="stepwizard">   
+                <div class="stepwizard-row">
+                    <div class="stepwizard-step">
+                            <button type="button" class="btn btn-default btn-circle">1</button>
+                            <p>Encontre o arquivo do setup e execute</p>
+                            <img src="img/uninstall2.jpg" class="img-responsive center-block" alt="Uninstall">      
+                    </div>
+                    <div class="stepwizard-step">
+                            <button type="button" class="btn btn-default btn-circle">2</button>
+                            <p>Se for solicitado, autorize o arquivo a fazer as modificações necessárias</p>
+                            <img src="img/authorize.jpg" class="img-responsive center-block" alt="find keyboard">      
+                    </div>
+                </div>
+            </div> 
+                <div class="stepwizard">   
+                    <div class="stepwizard-row">
+                        <div class="stepwizard-step">
+                                <button type="button" class="btn btn-default btn-circle">5</button>
+                                <p>Um aviso aparece se o processo for concluído com sucesso.</p>
+                                <img src="img/uninstallCompleate.jpg" class="img-responsive center-block" alt="uninstall Compleated">      
+                                
+                        </div>
+                    </div>
+                </div> 
+            <br>
+            <br>
+            <h4>Opção 02: use as configurações de "Adicionar ou remover programas" do Windows</h4>
+            <div class="stepwizard">   
+                <div class="stepwizard-row">
+                    <div class="stepwizard-step">
+                            <button type="button" class="btn btn-default btn-circle">1</button>
+                            <p>Clique a tecla do windows e procure "Adicionar ou remover programas"</p>
+                            <img src="img/add-remove.jpg" class="img-responsive center-block" alt="Search add remove program">      
+                    </div>
+                    <div class="stepwizard-step">
+                            <button type="button" class="btn btn-default btn-circle">1</button>
+                            <p>Encontre o programa do teclado na lista e selecione</p>
+                            <img src="img/find.jpg" class="img-responsive center-block" alt="find keyboard">      
+                    </div>
+                </div>
+            </div> 
+            <br>
+
+            <div class="stepwizard">   
+                <div class="stepwizard-row">
+                    <div class="stepwizard-step">
+                            <button type="button" class="btn btn-default btn-circle">3</button>
+                            <p>Clique em desinstalar</p>
+                            <img src="img/uninstall1.jpg" class="img-responsive center-block" alt="Search add remove program">      
+                    </div>
+                    <div class="stepwizard-step">
+                            <button type="button" class="btn btn-default btn-circle">4</button>
+                            <p>Permita que o programa feche as aplicações que estão utilizando o teclado</p>
+                            <img src="img/close.jpg" class="img-responsive center-block" alt="Close applications">      
+                    </div>
+                </div>
+            </div>            
+            <div class="stepwizard">   
+                    <div class="stepwizard-row">
+                        <div class="stepwizard-step">
+                                <button type="button" class="btn btn-default btn-circle">5</button>
+                                <p>Se nenhum aviso apareceu, o teclado foi desinstalado com sucesso.</p>
+                        </div>
+                </div>    
+    </div>
+    <br>
+
+    <footer>
+        <br>
+        Designed and developed by <a href="https://www.github.com/laralagioia">laralagioia</a>
+        <br>© 2018
+        <br>
+        <br>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Keyboard Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">  
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body class="container-fluid" data-spy="scroll" data-target=".navbar" data-offset="70">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                    <li><a href="#section1">Home</a></li>
+                    <li><a href="#section2">Accents</a></li>
+                    <li><a href="#section3">Install</a></li>
+                    <li><a href="#section4">Uninstall</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <img id="imgNavEng" src="https://lipis.github.io/flag-icon-css/flags/4x3/gb.svg" alt="UK Flag" class="img-thumbnail icon-small">
+                                ENG<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./index.html">
+                                    <img id="imgNavEng" src="https://lipis.github.io/flag-icon-css/flags/4x3/gb.svg" alt="UK Flag" class="img-thumbnail icon-small"> 
+                                    ENG
+                                </a></li>
+                                <li><a href="./index-pt.html">
+                                    <img id="imgNavPt" src="https://lipis.github.io/flag-icon-css/flags/4x3/br.svg" alt="Brazilian Flag" class="img-thumbnail icon-small"> 
+                                    PT-BR
+                                </a></li>                
+                            </ul>                         
+                        </li>
+
+                </ul>                        
+            </div>
+        </div>
+    </nav>   
+    <br>
+    <br>
+    <br> 
+
+    <div id="section1" class="container-fluid">
+        <h3>Welcome!</h3>
+        <p>This project was designed so you can type portuguese <a href="#section2">accents</a> on a UK keyboard.</p>
+        <p>It was developed on this type of keyboard layout:</p>
+            <img src="img/layout.jpg" class="img-responsive" alt="UK Keyboard">
+            <br>
+            <br>
+        <p>These other UK formats should also work: <span></span></p>
+            
+        <img src="img/alt_layout.jpg" class="img-responsive" alt="UK Keyboard">
+        <br>
+
+    </div>
+
+    <div id="section2" class="container-fluid">
+        <h3>Accents Available</h3>
+        <br>
+        <p>The following accents are available on the keyboard by using these commands: </p>
+        <br>
+        <div class="row">
+            <div class="col-sm-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a class="list-group-item" data-toggle="pill" href="#list-acute">Acute (´)</a></li>
+                    <li><a class="list-group-item" id="menu-cedilla" data-toggle="pill" href="#list-cedilla">Cedilla (¸)</a></li>
+                    <li><a class="list-group-item" data-toggle="pill" href="#list-circumflex" role="tab" aria-controls="circumflex">Circumflex (^)</a></li>
+                    <li><a class="list-group-item" data-toggle="pill" href="#list-umlaut" role="tab" aria-controls="umlaut">Diaeresis/Umlaut (¨)</a></li>
+                    <li><a class="list-group-item" data-toggle="pill" href="#list-grave" role="tab" aria-controls="grave">Grave (`)</a></li>
+                    <li><a class="list-group-item" data-toggle="pill" href="#list-invqmark" role="tab" aria-controls="invqmark">Inverted Question Mark (¿)</a></li>
+                    <li><a class="list-group-item" data-toggle="pill" href="#list-invexmark" role="tab" aria-controls="invexmark">Inverted Exclamation Mark (¡)</a></li>
+                </ul>
+            </div>
+            <br>
+            <div class="col-sm-9">
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="list-acute" role="tabpanel" aria-labelledby="list-acute-list">
+                        <h4>Acute Accent (´)</h4>
+                        <br>
+                        <p>Apostrophe key followed by the vowel</p>
+                        <img src="img/apostrophe.jpg" class="img" alt="Apostrophe Key"> <span class="glyphicon glyphicon-arrow-right"></span> <img src="img/vowels.jpg" class="img" alt="Vowels">
+                    </div>
+                    <div class="tab-pane fade" id="list-cedilla" role="tabpanel" aria-labelledby="list-cedilla-list">
+                        <h4>Cedilla Accent (¸)</h4>
+                        <br>
+                        <p>Apostrophe key followed by 'c' key</p>
+                        <img src="img/apostrophe.jpg" class="img" alt="Apostrophe Key"> <span class="glyphicon glyphicon-arrow-right"></span> <img src="img/c.jpg" class="img" alt="C Key">                        
+                    </div>
+                    <div class="tab-pane fade" id="list-circumflex" role="tabpanel" aria-labelledby="list-circumflex-list">
+                        <h4>Circumflex (^)</h4>
+                        <br>
+                        <p>Circumflex key followed by the vowel</p>
+                        <img src="img/circumflex.jpg" class="img" alt="Circumflex Key"> <span class="glyphicon glyphicon-arrow-right"></span> <img src="img/vowels.jpg" class="img" alt="Vowels">
+                    </div>
+                    <div class="tab-pane fade" id="list-umlaut" role="tabpanel" aria-labelledby="list-umlaut-list">
+                        <h4>Diaeresis/Umlaut (¨)</h4>
+                        <br>
+                        <p>
+                            Ctrl + Alt + colon/semi-colon key pressed at the same time followed by the vowels 
+                            <br><strong>or</strong>
+                            <br>AltGr + colon/semi-colon key pressed at the same time followed by the vowel
+                        </p>
+                        <img src="img/alt grand.jpg" class="img" alt="AltGran Key"> <span class="glyphicon glyphicon-arrow-right"></span> <img src="img/vowels.jpg" class="img" alt="Vowels">
+                    </div>
+                    <div class="tab-pane fade" id="list-grave" role="tabpanel" aria-labelledby="list-grave-list">
+                        <h4>Grave (`)</h4>
+                        <br>
+                        <p>Grave key followed by the vowel</p>
+                        <img src="img/grave.jpg" class="img" alt="Grave Key"> <span class="glyphicon glyphicon-arrow-right"></span> <img src="img/vowels.jpg" class="img" alt="Vowels">
+                        
+                    </div>
+                    <div class="tab-pane fade" id="list-invqmark" role="tabpanel" aria-labelledby="list-invqmark-list">
+                        <h4>Inverted Question Mark (¿)</h4>
+                        <br>
+                        <p>
+                            Even though is not a proper portuguese accent, it might be useful to have it easily accessible.
+                            <br>
+                            <br>
+                            Ctrl + Alt + question mark/foward slash key pressed at the same time
+                            <br><strong>or</strong>
+                            <br>AltGr + foward slash/question mark key pressed at the same time
+                        </p>
+                        <img src="img/qmark.png" class="img" alt= "Inverted Question Mark Key">
+                        
+                    </div>
+                    <div class="tab-pane fade" id="list-invexmark" role="tabpanel" aria-labelledby="list-invexmark-list">
+                        <h4>Inverted Exclamation Mark (¡)</h4>
+                        <br>
+                        <p>
+                            Ctrl + Alt + 1/exclamation mark key pressed at the same time
+                            <br><strong>or</strong>
+                            <br>AltGr +  1/exclamation mark key pressed at the same time                           
+                        </p>
+                        <img src="img/invexcl.jpg" class="img" alt= "Inverted Exclamation Mark Key">
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div id="section3" class="container-fluid">
+        <h3>Installing</h3>
+        <div class="stepwizard">
+            <div class="stepwizard-row">
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-default btn-circle">1</button>
+                    <p><a href="http://bit.do/uk-pt-keyboard-1">Download</a>, save and extract the installation files</p></p>
+                    <p style="font-size: small; font-weight: normal;">Alternative download links: <a href="http://bit.do/uk-pt-keyboard-2">here</a> and <a href="http://bit.do/uk-pt-keyboard-3">b</a></p>                    
+                    <img src="img/extract.jpg" class="img-responsive center-block" alt="Extract">        
+                </div>
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-default btn-circle">2</button>
+                    <p>Open folder and run the setup file</p>
+                    <img src="img/run.jpg" class="img-responsive center-block" alt="Run Setup">                               
+                </div>
+            </div>
+        </div>
+            <br>
+        <div class="stepwizard">                    
+            <div class="stepwizard-row">
+                <div class="stepwizard-step">
+                        <button type="button" class="btn btn-default btn-circle">3</button>
+                        <p>If prompted, authorize the file to make modifications</p>
+                        <img src="img/authorize.jpg" class="img-responsive center-block" alt="find keyboard">      
+                        
+                </div>
+                <div class="stepwizard-step">
+                        <button type="button" class="btn btn-default btn-circle">4</button>
+                        <p>Follow the wizard and install the files on your PC</p>
+                        <img src="img/install-ok.jpg" class="img-responsive center-block" alt="Install">                                                       
+                </div>
+            </div>
+        </div>
+            <br>
+        <div class="stepwizard">                                        
+            <div class="stepwizard-row">
+                    <div class="stepwizard-step">
+                            <button type="button" class="btn btn-default btn-circle">5</button>
+                            <p>Restart your machine</p>
+                            <img src="img/restart.jpg" class="img-responsive center-block" alt="Extract">                                    
+                    </div>
+                    <div class="stepwizard-step">
+                            <button type="button" class="btn btn-default btn-circle">6</button>
+                            <p>Search for Region & Language settings</p>
+                            <img src="img/region.jpg" class="img-responsive center-block" alt="Search">                                                                                   
+                    </div>
+            </div>
+        </div>
+            <br>
+            <br>
+        <div class="stepwizard">                                                           
+            <div class="stepwizard-row">
+                <div class="stepwizard-step">
+                        <button type="button" class="btn btn-default btn-circle">7</button>
+                        <p>Click on your language Options. <br>
+                            You can have whatever language you wish on this step.</p>
+                        <img src="img/options.jpg" class="img-responsive center-block" alt="Languge Option">                        
+                </div>
+                <div class="stepwizard-step">
+                        <button type="button" class="btn btn-default btn-circle">8</button>
+                        <p>Click on "Add a keyboard" and select United Kingdom - PT(BR)</p>
+                        <img src="img/keyboard.jpg" class="img-responsive center-block" alt="Select UK-PT(BR)">                                                                                   
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="stepwizard">   
+            <div class="stepwizard-row">
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-default btn-circle">9</button>
+                    <p>Your keyboard is now set and ready to use accents</p>
+                </div>
+            </div>
+        </div>              
+    </div>
+
+    <div id="section4" class="container-fluid">
+            <h3>Uninstalling</h3>
+            <p>We're sad that the keyboard didn't work for you. Ensure that the keyboard is not selected as the default one when trying to uninstall.
+            <br>You have two options to uninstall the keyboard:</p>
+            <h4>Option 01: using the keyboard setup</h4>
+            <div class="stepwizard">   
+                <div class="stepwizard-row">
+                    <div class="stepwizard-step">
+                            <button type="button" class="btn btn-default btn-circle">1</button>
+                            <p>Find the keyboard setup file and double click on it</p>
+                            <img src="img/uninstall2.jpg" class="img-responsive center-block" alt="Uninstall">      
+                    </div>
+                    <div class="stepwizard-step">
+                            <button type="button" class="btn btn-default btn-circle">2</button>
+                            <p>If prompted, authorize the file to make modifications</p>
+                            <img src="img/authorize.jpg" class="img-responsive center-block" alt="find keyboard">      
+                    </div>
+                </div>
+            </div> 
+                <div class="stepwizard">   
+                    <div class="stepwizard-row">
+                        <div class="stepwizard-step">
+                                <button type="button" class="btn btn-default btn-circle">5</button>
+                                <p>A warning appears and the uninstalling process is compleated.</p>
+                                <img src="img/uninstallCompleate.jpg" class="img-responsive center-block" alt="uninstall Compleated">      
+                                
+                        </div>
+                    </div>
+                </div> 
+            <br>
+            <br>
+            <h4>Option 02: using the "Add or remove programs" settings on Windows</h4>
+            <div class="stepwizard">   
+                <div class="stepwizard-row">
+                    <div class="stepwizard-step">
+                            <button type="button" class="btn btn-default btn-circle">1</button>
+                            <p>Click on your windows key and search for "Add or remove programs"</p>
+                            <img src="img/add-remove.jpg" class="img-responsive center-block" alt="Search add remove program">      
+                    </div>
+                    <div class="stepwizard-step">
+                            <button type="button" class="btn btn-default btn-circle">1</button>
+                            <p>Find the program on your list and select it</p>
+                            <img src="img/find.jpg" class="img-responsive center-block" alt="find keyboard">      
+                    </div>
+                </div>
+            </div> 
+            <br>
+
+            <div class="stepwizard">   
+                <div class="stepwizard-row">
+                    <div class="stepwizard-step">
+                            <button type="button" class="btn btn-default btn-circle">3</button>
+                            <p>Click on uninstall</p>
+                            <img src="img/uninstall1.jpg" class="img-responsive center-block" alt="Search add remove program">      
+                    </div>
+                    <div class="stepwizard-step">
+                            <button type="button" class="btn btn-default btn-circle">4</button>
+                            <p>Allow the wizard to close applications that are using the keyboard</p>
+                            <img src="img/close.jpg" class="img-responsive center-block" alt="Close applications">      
+                    </div>
+                </div>
+            </div>            
+            <div class="stepwizard">   
+                    <div class="stepwizard-row">
+                        <div class="stepwizard-step">
+                                <button type="button" class="btn btn-default btn-circle">5</button>
+                                <p>If no warnings appeared, you have successfully uninstalled the keyboard</p>
+                        </div>
+                </div>    
+    </div>
+
+    <footer>
+        <br>
+        Designed and developed by <a href="https://www.github.com/laralagioia">laralagioia</a>
+        <br>© 2018
+        <br>
+        <br>
+    </footer>
+</body>
+
+</html>
