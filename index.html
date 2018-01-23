@@ -14,9 +14,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">  
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">  
+  <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body class="container-fluid" data-spy="scroll" data-target=".navbar" data-offset="70">
@@ -37,6 +38,7 @@
                     <li><a href="#section2">Accents</a></li>
                     <li><a href="#section3">Install</a></li>
                     <li><a href="#section4">Uninstall</a></li>
+                    <li><a href="#section5">Accents in Ubuntu (17.10)</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -65,12 +67,12 @@
         <h3>Welcome!</h3>
         <p>After installing this project on your machine you'll be able to type Portuguese <a href="#section2">accents</a> on a UK keyboard.</p>
         <p>It was developed for Windows 10 on this type of keyboard layout:</p>
-            <img src="img/layout.jpg" class="img-responsive" alt="UK Keyboard">
+            <img  src="img/layout.jpg" class="fancybox img-responsive" alt="UK Keyboard">
             <br>
             <br>
         <p>This other UK keyboard format should also work: <span></span></p>
             
-        <img src="img/alt_layout.jpg" class="img-responsive" alt="UK Keyboard">
+        <img src="img/alt_layout.jpg" data-action="zoom" class="fancybox img-responsive" alt="UK Keyboard">
         <br>
 
     </div>
@@ -170,12 +172,13 @@
                     <button type="button" class="btn btn-default btn-circle">1</button>
                     <p><a href="http://bit.do/uk-pt-keyboard-1"  target="_blank">Download</a>, save and extract the installation files</p></p>
                     <p style="font-size: small; font-weight: normal;">Alternative download links: <a href="http://bit.do/uk-pt-keyboard-2"  target="_blank">here</a> and <a href="http://bit.do/uk-pt-keyboard-3"  target="_blank">here</a></p>                    
-                    <img src="img/extract.jpg" class="img-responsive center-block" alt="Extract">        
+                    <img src="img/extract.jpg" class="fancybox img-responsive center-block" alt="Extract">        
                 </div>
                 <div class="stepwizard-step col-md-12 col-lg-6">
                     <button type="button" class="btn btn-default btn-circle">2</button>
                     <p>Open folder and run the setup file</p>
-                    <img src="img/run.jpg" class="img-responsive center-block" alt="Run Setup">                               
+                    <br>
+                    <img src="img/run.JPG" class="fancybox img-responsive center-block" alt="Run Setup">                               
                 </div>
             </div>
         </div>
@@ -185,13 +188,13 @@
                 <div class="stepwizard-step col-md-12 col-lg-6">
                         <button type="button" class="btn btn-default btn-circle">3</button>
                         <p>If prompted, authorize the file to make modifications</p>
-                        <img src="img/authorize.jpg" class="img-responsive center-block" alt="find keyboard">      
+                        <img src="img/authorize.jpg" class="fancybox img-responsive center-block" alt="find keyboard">      
                         
                 </div>
                 <div class="stepwizard-step col-md-12 col-lg-6">
                         <button type="button" class="btn btn-default btn-circle">4</button>
                         <p>Follow the wizard and install the files on your PC</p>
-                        <img src="img/install-ok.JPG" class="img-responsive center-block" alt="Install">                                                       
+                        <img src="img/install-ok.JPG" class="fancybox img-responsive center-block" alt="Install">                                                       
                 </div>
             </div>
         </div>
@@ -201,12 +204,12 @@
                     <div class="stepwizard-step col-md-12 col-lg-6">
                             <button type="button" class="btn btn-default btn-circle">5</button>
                             <p>Restart your machine</p>
-                            <img src="img/restart.jpg" class="img-responsive center-block" alt="Extract">                                    
+                            <img src="img/restart.jpg" class="fancybox img-responsive center-block" alt="Extract">                                    
                     </div>
                     <div class="stepwizard-step col-md-12 col-lg-6">
                             <button type="button" class="btn btn-default btn-circle">6</button>
                             <p>Search for Region & Language settings</p>
-                            <img src="img/region.jpg" class="img-responsive center-block" alt="Search">                                                                                   
+                            <img src="img/region.jpg" class="fancybox img-responsive center-block" alt="Search">                                                                                   
                     </div>
             </div>
         </div>
@@ -218,12 +221,12 @@
                         <button type="button" class="btn btn-default btn-circle">7</button>
                         <p>Click on your language Options. <br>
                             You can have whatever language you wish on this step.</p>
-                        <img src="img/options.JPG" class="img-responsive center-block" alt="Languge Option">                        
+                        <img src="img/options.JPG" class="fancybox img-responsive center-block" alt="Languge Option">                        
                 </div>
                 <div class="stepwizard-step col-md-12 col-lg-6">
                         <button type="button" class="btn btn-default btn-circle">8</button>
                         <p>Click on "Add a keyboard" and select United Kingdom - PT(BR)</p>
-                        <img src="img/keyboard.jpg" class="img-responsive center-block" alt="Select UK-PT(BR)">                                                                                   
+                        <img src="img/keyboard.jpg" class="fancybox img-responsive center-block" alt="Select UK-PT(BR)">                                                                                   
                 </div>
             </div>
         </div>
@@ -250,12 +253,12 @@
                     <div class="stepwizard-step col-md-12 col-lg-6">
                             <button type="button" class="btn btn-default btn-circle">1</button>
                             <p>Find the keyboard setup file and double click on it</p>
-                            <img src="img/uninstall2.jpg" class="img-responsive center-block" alt="Uninstall">      
+                            <img src="img/uninstall2.jpg" class="fancybox img-responsive center-block" alt="Uninstall">      
                     </div>
                     <div class="stepwizard-step col-md-12 col-lg-6">
                             <button type="button" class="btn btn-default btn-circle">2</button>
                             <p>If prompted, authorize the file to make modifications</p>
-                            <img src="img/authorize.jpg" class="img-responsive center-block" alt="find keyboard">      
+                            <img src="img/authorize.jpg" class="fancybox img-responsive center-block" alt="find keyboard">      
                     </div>
                 </div>
             </div> 
@@ -265,7 +268,7 @@
                         <div class="stepwizard-step col-sm-12">
                                 <button type="button" class="btn btn-default btn-circle">3</button>
                                 <p>A warning appears and the uninstalling process is compleated.</p>
-                                <img src="img/uninstallCompleate.jpg" class="img-responsive center-block" alt="uninstall Compleated">      
+                                <img src="img/uninstallCompleate.jpg" class="fancybox img-responsive center-block" alt="uninstall Compleated">      
                                 
                         </div>
                     </div>
@@ -278,12 +281,12 @@
                     <div class="stepwizard-step col-md-12 col-lg-6">
                             <button type="button" class="btn btn-default btn-circle">1</button>
                             <p>Click on your windows key and search for "Add or remove programs"</p>
-                            <img src="img/add-remove.jpg" class="img-responsive center-block" alt="Search add remove program">      
+                            <img src="img/add-remove.jpg" class="fancybox img-responsive center-block" alt="Search add remove program">      
                     </div>
                     <div class="stepwizard-step col-md-12 col-lg-6">
                             <button type="button" class="btn btn-default btn-circle">2</button>
                             <p>Find the program on your list and select it</p>
-                            <img src="img/find.JPG" class="img-responsive center-block" alt="find keyboard">      
+                            <img src="img/find.JPG" class="fancybox img-responsive center-block" alt="find keyboard">      
                     </div>
                 </div>
             </div> 
@@ -294,25 +297,86 @@
                     <div class="stepwizard-step col-md-12 col-lg-6">
                             <button type="button" class="btn btn-default btn-circle">3</button>
                             <p>Click on uninstall</p>
-                            <img src="img/uninstall1.jpg" class="img-responsive center-block" alt="Search add remove program">      
+                            <img src="img/uninstall1.jpg" class="fancybox img-responsive center-block" alt="Search add remove program">      
                     </div>
                     <div class="stepwizard-step col-md-12 col-lg-6">
                             <button type="button" class="btn btn-default btn-circle">4</button>
                             <p>Allow the wizard to close applications that are using the keyboard</p>
-                            <img src="img/close.JPG" class="img-responsive center-block" alt="Close applications">      
+                            <img src="img/close.JPG" class="fancybox img-responsive center-block" alt="Close applications">      
                     </div>
                 </div>
             </div>      
             <br>      
             <div class="stepwizard row">   
-                    <div class="stepwizard-row">
-                        <div class="stepwizard-step col-sm-12">
-                                <button type="button" class="btn btn-default btn-circle">5</button>
-                                <p>If no warnings appeared, you have successfully uninstalled the keyboard</p>
-                        </div>
-                </div>    
+                <div class="stepwizard-row">
+                    <div class="stepwizard-step col-sm-12">
+                            <button type="button" class="btn btn-default btn-circle">5</button>
+                            <p>If no warnings appeared, you have successfully uninstalled the keyboard</p>
+                    </div>
+            </div>    
     </div>
     <br>
+    
+    <div id="section5" class="container-fluid">
+        <h3>Accents in Ubuntu (17.10)</h3>
+        <p>Linux configuration files have already a build in keyboard that support accents, with slight differences from the one above, which is available for Windows.</p>
+        <p>Here's the keyboard configuration available for Ubuntu:</p>
+        <img id="keyboardLinux" src="img/linux_keyboard.png" onclick="showModal(keyboardLinux)" class="fancybox img-responsive center-block" alt="Linux keyboard">      
+        <br>
+        <p>Here's a quick guide to set this keyboard as the default one in your machine:</p>
+        <div class="stepwizard row">   
+            <div class="stepwizard-row">
+                <div class="stepwizard-step col-md-12 col-lg-6">
+                    <button type="button" class="btn btn-default btn-circle">1</button>
+                    <p>Open settings</p>
+                    <img id="myImg" onclick="showModal(myImg)" src="img/linux_config1.png" class="fancybox img-responsive center-block" alt="open ubuntu config">      
+                </div>
+                <div class="stepwizard-step col-md-12 col-lg-6">
+                    <button type="button" class="btn btn-default btn-circle">2</button>
+                    <p>Select Region and Language and click on the + sign to add an input source</p>
+                    <img src="img/linux_config2.png" class="fancybox img-responsive center-block" alt="open Region and Language settings">      
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="stepwizard row">   
+            <div class="stepwizard-row">
+                <div class="stepwizard-step col-md-12 col-lg-6">
+                    <button type="button" class="btn btn-default btn-circle">3</button>
+                    <p>Select English(United Kingdom)</p>
+                    <br>
+                    <img src="img/linux_config3.png" class="fancybox img-responsive center-block" alt="select English UK">      
+                </div>
+                <div class="stepwizard-step col-md-12 col-lg-6">
+                    <button type="button" class="btn btn-default btn-circle">4</button>
+                    <p>Scroll down, search for English(UK, international with dead keys), select and click on add</p>
+                    <img src="img/linux_config4.png" class="fancybox img-responsive center-block" alt="open Regiom and Language settings">      
+                </div>
+            </div>
+        </div>  
+        <br>
+
+        <div class="stepwizard row">   
+            <div class="stepwizard-row">
+                <div class="stepwizard-step col-md-12 col-lg-6">
+                    <button type="button" class="btn btn-default btn-circle">5</button>
+                    <p>You can remove the old keyboard by clicking on the -</p>
+                    <img src="img/linux_config5.png" class="fancybox img-responsive center-block" alt="remove old keyboard">      
+                </div>
+                <div class="stepwizard-step col-md-12 col-lg-6">
+                    <button type="button" class="btn btn-default btn-circle">6</button>
+                    <p>Your keyboard is ready to be used with accents</p>
+                    <img id="myImg" src="img/linux_config6.png" class="fancybox img-responsive center-block" alt="remove old keyboard">      
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+
     <footer>
         <br>
         Designed and developed by <a href="https://www.github.com/laralagioia">laralagioia</a>
@@ -320,6 +384,10 @@
         <br>
         <br>
     </footer>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
